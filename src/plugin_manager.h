@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <memory>
 
 #define PLUGIN_DIRECTORY "./plugins"
 

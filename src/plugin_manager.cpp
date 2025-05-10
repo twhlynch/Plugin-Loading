@@ -35,7 +35,7 @@ PluginManager::PluginManager()
     for (const auto& entry : fs::directory_iterator(PLUGIN_DIRECTORY)) {
         if (!entry.is_regular_file()) continue;
         
-		std::string extension = entry.path().extension();
+		std::string extension = entry.path().extension().string();
         if (extension != ("." + std::string(LIBRARY_EXTENSION))) continue;
 		
         std::string plugin_path = entry.path().string();
